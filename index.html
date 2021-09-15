@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chuỗi cung ứng coffee xuất nhập khẩu</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="./img/logo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Thông tin</a>
+            <a href="#menu">Thực đơn</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#review">Đánh giá</a>
+            <a href="#blogs">Chi nhánh</a>
+            <a href="#feedback">Phản hồi</a>
+            <a href="#contact">Liên hệ</a>
+            
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="btn-search"></i>
+            <i class="fas fa-shopping-cart" id="btn-cart"></i>
+            <i class="fas fa-bars" id="btn-bars"></i>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm....">
+            <label for="search-box" class="fas fa-search" ></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="cart-item-cancel fas fa-times"></i>
+                <img src="./img/cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>Sản Phẩm 1</h3>
+                    <div class="price">$9.42/-</div>
+                </div>
+            </div>
+             <div class="cart-item">
+                    <i class="cart-item-cancel fas fa-times"></i>
+                    <img src="./img/cart-item-2.png" alt="">
+                    <div class="content">
+                        <h3>Sản Phẩm 2</h3>
+                        <div class="price">$10.11/-</div>
+                     </div>
+            </div>
+            <div class="cart-item">
+                <i class="cart-item-cancel fas fa-times"></i>
+                <img src="./img/cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>Sản Phẩm 3</h3>
+                    <div class="price">$11.08/-</div>
+                 </div>
+            </div>
+            <div class="cart-item">
+                <i class="cart-item-cancel fas fa-times"></i>
+                <img src="./img/cart-item-4.png" alt="">
+                <div class="content">
+                    <h3>Sản Phẩm 4</h3>
+                    <div class="price">$8.49/-</div>
+                 </div>
+            </div>
+            <a href="" class="btn btn-return">Trở lại</a>
+        </div>
+    </header>
+
+
+    <selection class="home" id="home">
+        <div class="content">
+            <h3>Cà phê tươi là <br> cà phê ngon nhất!</h3>
+            <p class="text">Tùy vào khẩu vị của mỗi người, tuy nhiên dù bạn có là fan của cà phê Nestle, cà phê Trung Nguyên hay thậm chí là fan của King Coffee, <span class="dots">....</span> <span class="moreText"> thì cà phê tươi luôn là cà phê ngon nhất.
+               <br> Cà phê tươi mới sẽ đem lại không chỉ sự tỉnh táo của caffeine, nó còn đem lại cho bạn cảm giác của sự thoải mái.
+                 Hương vị của cà phê mới, đặc biệt là cà phê hạt có chất lượng tốt mới rang cách đó 2-3 ngày thật sự biết cách làm mê hoặc lòng người.</span>
+            </p>
+            <a href="#home" class="btn btn-read-more">Đọc thêm..</a>
+        </div>
+    </selection>
+
+    <selection class="about" id="about">
+        <h1 class="heading"><span>Thông </span> tin</h1>
+        <div class="row">
+            <div class="image">
+                <img src="./img/coffee-mix.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Điều đặc biệt của cà phê rang xay</h3>
+                <p class="content-text">Cà phê rang xay là cà phê được tuyển lựa từ những hạt cà phê tốt nhất, qua quá trình rang và xay cho ra sản phẩm cà phê không pha tạp chất như: đậu, bắp, tinh bột hay các phụ gia và hương liệu khác. 
+                    Trong quá trình rang xay có thể tẩm thêm bơ, rượu và được ủ trong điều kiện nhiệt độ nhất định.<span class="content-dots">....</span><br>
+                  <span class="content-moreText">Cà phê rang xay là một khái niệm chung chỉ cho loại cà phê có chất lượng cao, được xay tại chỗ, ngay nơi bán để phân biệt với các loại cà phê kém chất lượng có trộn tạp chất.
+                    Quy trình phải đảm bảo sạch từ những bước chăm sóc, thu hoạch đến các bước chế biến đảm bảo không có bất kì các hóa chất độc hại nào.</span></p>
+                    <a href="#about" class="btn btn-find-more">Tìm hiểu</a>
+            </div>
+        </div>
+    </selection>
+
+    <selection class="menu" id="menu">
+        <h1 class="heading">Thực <span> đơn</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/menu-1.png" alt="">
+                <h3>Cappucino</h3>
+                <div class="price">$5.20 <span>6.99</span></div>
+                <a href="" class="btn">Thêm vào túi</a>
+            </div>
+            <div class="box">
+                <img src="./img/menu-2.png" alt="">
+                <h3>Caffè Americano</h3>
+                <div class="price">$6.50 <span>7.59</span></div>
+                <a href="" class="btn">Thêm vào túi</a>
+            </div>
+            <div class="box">
+                <img src="./img/menu-3.png" alt="">
+                <h3>Doppio</h3>
+                <div class="price">$7.50 <span>8.35</span></div>
+                <a href="" class="btn">Thêm vào túi</a>
+            </div>
+            <div class="box">
+                <img src="./img/menu-4.png" alt="">
+                <h3>Espresso</h3>
+                <div class="price">$3.66 <span>5.35</span></div>
+                <a href="" class="btn">Thêm vào túi</a>
+            </div>
+            <div class="box">
+                <img src="./img/menu-5.png" alt="">
+                <h3>Cacao Coffee</h3>
+                <div class="price">$4.50 <span>5.35</span></div>
+                <a href="" class="btn">Thêm vào túi</a>
+            </div>
+            <div class="box">
+                <img src="./img/menu-6.png" alt="">
+                <h3>Latte</h3>
+                <div class="price">$6.50 <span>7.35</span></div>
+                <a href="" class="btn">Thêm vào túi</a>
+            </div>
+        </div>
+    </selection>
+
+    <selection class="products" id="products">
+        <h1 class="heading"><span>Sản </span> phẩm</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <span class="icons-cart">
+                        <i class="icons-cart-full fas fa-shopping-cart"></i>
+                        <i class="icons-cart-plus fas fa-cart-plus"></i>
+                    </span>
+                    <span class="icons-eye">
+                        <i class="icons-eye-full far fa-eye"></i>
+                        <i class="icons-eye-slash far fa-eye-slash"></i>
+                    </span>
+                    
+                    <span class="icons-heart ">
+                        <i class="icons-heart-empty far fa-heart"></i>
+                        <i class="icons-heart-fill fas fa-heart"></i>
+                    </span>
+                    
+                </div>
+                <div class="image">
+                    <img src="./img/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cà phê Moka</h3>
+                    <div class="price">$18.99 <span>$20.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="label"><span>Sản phẩm bán chạy</span></div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <span class="icons-cart">
+                        <i class="icons-cart-full fas fa-shopping-cart"></i>
+                        <i class="icons-cart-plus fas fa-cart-plus"></i>
+                    </span>
+                    <span class="icons-eye">
+                        <i class="icons-eye-full far fa-eye"></i>
+                        <i class="icons-eye-slash far fa-eye-slash"></i>
+                    </span>
+                    <span class="icons-heart ">
+                        <i class="icons-heart-empty far fa-heart"></i>
+                        <i class="icons-heart-fill fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="image">
+                    <img src="./img/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cà phê Arabika</h3>
+                    <div class="price">$23.79 <span>$25.79</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="label "><span>Sản phẩm của năm</span></div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <span class="icons-cart">
+                        <i class="icons-cart-full fas fa-shopping-cart"></i>
+                        <i class="icons-cart-plus fas fa-cart-plus"></i>
+                    </span>
+                    <span class="icons-eye">
+                        <i class="icons-eye-full far fa-eye"></i>
+                        <i class="icons-eye-slash far fa-eye-slash"></i>
+                    </span>
+                    <span class="icons-heart ">
+                        <i class="icons-heart-empty far fa-heart"></i>
+                        <i class="icons-heart-fill fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="image">
+                    <img src="./img/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cà phê Robusta</h3>
+                    <div class="price">$25.19 <span>$30.19</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="label "><span>Sản phẩm giới hạn</span></div>
+            </div>
+
+            
+        </div>
+    </selection>
+
+
+    <selection class="review" id="review">
+        <h1 class="heading"><span>Đánh </span> giá</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./img/quote-img.png" alt="" class="quote">
+                <p>Hương vị cà phê rang đậm vị, không hòa lẫn các hương liệu khác như bắp,... giữ được độ sánh mịn, tiêu chuẩn hợp lý cho mỗi buổi sáng không thể thiếu của tôi! <br> <br></p>
+                <img src="./img/pic-1.jpg" alt="" class="pic">
+                <h3>Thông Nguyễn</h3>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+            </div>
+
+            <div class="box">
+                <img src="./img/quote-img.png" alt="" class="quote">
+                <p>Cà phê rang với hương vị khó quên, đã từng thử nhiều nơi nhưng chưa đâu có thể cảm nhận được vị cà phê đúng nghĩa như ở đây, món đặc biệt nhất khiến tôi đều muốn dùng khi đến đây là Caffè Americano. Nó thật tuyệt vời!</p>
+                <img src="./img/pic-2.jpg" alt="" class="pic">
+                <h3>Thảo Nguyễn Hà</h3>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="box">
+                <img src="./img/quote-img.png" alt="" class="quote">
+                <p>Thức uống giúp tôi tỉnh táo mỗi buổi sáng, cho tinh thần sảng khoái hơn nếu tìm được vị cà phê đồng điệu. Ở đây có những thứ cần cho tôi từ hương vị nhẹ nhàng đến thư giãn. Chẳng hạn như Doppio nó thật khác biệt. <br></p>
+                <img src="./img/pic-3.jpg" alt="" class="pic">
+                <h3>Hà Thủy</h3>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+    </selection>
+
+    <selection class="blogs" id="blogs">
+        <h1 class="heading">Chi <span>nhánh</span></h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./img/blog-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="tittle">
+                        Lợi ích của bữa sáng
+                    </a>
+                    <span>Thêm bởi admin / 15-Sep,2021</span>
+                    <p>Bữa sáng là cần thiết cho một ngày để gia tăng công suất làm việc, đi kèm đó là một ly cà phê ấm nóng không thể thiếu.
+                        <span>Chi nhánh Phan Đăng Lưu, Q.Phú Nhuận</span></p>
+                    <a href="" class="btn">Liên hệ</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./img/blog-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="tittle">
+                        Năng lượng cho người bận rộn
+                    </a>
+                    <span>Thêm bởi admin / 15-Sep,2021</span>
+                    <p>Chỉ cần 5 phút để chuẩn bị một cốc cà phê đá với hương vị nhẹ nhàng tiếp thêm năng lượng cho một ngày bộn bề công việc. 
+                        <span>Chi nhánh Hậu Giang, Q.6</span></p>
+                    <a href="" class="btn">Liên hệ</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./img/blog-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="tittle">
+                        Trầm lắng của phố thị
+                    </a>
+                    <span>Thêm bởi admin / 15-Sep,2021</span>
+                    <p>Song song với bộn bề của phố thị là sự an yên tĩnh lặng, mộc mạc không quá ồn ào dành cho sự thư giãn của mọi lứa tuổi. 
+                        <span>Chi nhánh Mạc Đĩnh Chi, Q.1</span></p>
+                    <a href="" class="btn">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </selection>
+
+    <selection class="feedback" id="feedback">
+        <h1 class="heading">Phản <span>Hồi</span></h1>
+            <div class="row">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1550323099505!2d106.69137311533433!3d10.799435661720413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528c5dd7cf211%3A0x2d36515e500e098a!2zVuG6oW4gS2nhur9wLCBCw6xuaCBUaOG6oW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1631690728528!5m2!1svi!2s" 
+                allowfullscreen="" loading="lazy" class="map"></iframe>
+                </div>
+                
+                <form action="">
+                    <h3>Phản hồi của khách hàng</h3>
+                    <div class="inputBox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Họ và Tên">
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-phone"></i>
+                        <input type="number" placeholder="Số điện thoại">
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox inputBox-write">
+                        <input type="text" placeholder="Viết đánh giá">
+                    </div>
+                </form>
+            </div>
+    </selection>
+
+    <footer class="contact" id="contact">
+        
+        <div class="share">
+            <a href="https://www.facebook.com/thong.nguyen14.10/"><i class="facebook fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCF8h6oDApmeXyMlm4TvbZvA"> <i class="youtube fab fa-youtube"></i></a>
+            <a href="https://twitter.com/?lang=vi"><i class="twitter fab fa-twitter"></i></a>
+            
+        </div>
+        <div class="credit">Thiết kế bởi <span>Thông Nguyễn
+            <div class="qr-code">
+                <img src="./img/qr-code.jpg" alt="">
+                <span>zalo contact</span>
+            </div>
+            </span> | Sẵn sàng phục vụ</div>
+        <div class="infor">
+            <div class="infor-phone">
+                <i class="right fas fa-caret-right"></i>
+                <i class="phone fas fa-phone"></i>
+                <img src="./img/flag.png" alt="" class="flag">
+                <span>(+84) 961-199-092</span>
+            </div>
+            <div class="infor-mail">
+                <i class="right fas fa-caret-right"></i>
+                <i class="mail far fa-envelope"></i>
+                <span>minhthong.nguyen141096@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
