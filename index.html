@@ -352,19 +352,22 @@
                 allowfullscreen="" loading="lazy" class="map"></iframe>
                 </div>
                 
-                <form action="">
+                <form action="" id="form-1">
                     <h3>Phản hồi của khách hàng</h3>
                     <div class="inputBox">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Họ và Tên">
+                        <input id="fullname" name="fullname" type="text" placeholder="Họ và Tên">
+                        <span class="form-message"></span>
                     </div>
                     <div class="inputBox">
                         <i class="fas fa-phone"></i>
-                        <input type="number" placeholder="Số điện thoại">
+                        <input id="number" name="number" type="number" placeholder="Số điện thoại">
+                        <span class="form-message"></span>
                     </div>
                     <div class="inputBox">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email">
+                        <input id="email" name="email" type="email" placeholder="Email">
+                        <span class="form-message"></span>
                     </div>
                     <div class="inputBox inputBox-write">
                         <input type="text" placeholder="Viết đánh giá">
@@ -406,5 +409,16 @@
 
 
     <script src="./script.js"></script>
+    <script>
+        Validator({
+            form:'#feedback',
+            errorSelector:'.form-message',
+            rules:[
+                Validator.isRequired('#fullname'),
+                Validator.isPhone('#number'),
+                Validator.minLength('#email', 8),
+            ]
+        })
+    </script>
 </body>
 </html>

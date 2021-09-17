@@ -90,3 +90,76 @@ heart_btn.forEach((btn,i)=>{
         changeHeart(i)
     })
 })
+
+
+
+
+function Validator(options) {
+/*Hàm thực hiện*/
+    function validator(inputElement, rule) {
+        var errorMessage = rule.test(inputElement.value);
+        var errorElement = inputElement.parentElement.querySelector(options.errorSelector)           
+        if(errorMessage){
+            errorElement.innerHTML = errorMessage
+            inputElement.parentElement.classList.add('invalid')
+        }else{
+            errorElement.innerHTML = '';
+            inputElement.parentElement.classList.remove('invalid')
+        }
+    }
+/*Lấy element của form*/
+    var formElements = document.querySelector(options.form)
+    if(formElements){
+        options.rules.forEach(function (rule) {
+            var inputElement = formElements.querySelector(rule.selector)
+                if(inputElement){
+                inputElement.onblur = function () {
+                   validator(inputElement, rule)
+                }
+                inputElement.oninput = function () {
+                var errorElement = inputElement.parentElement.querySelector('.form-message') 
+                    errorElement.innerHTML = '';
+                     inputElement.parentElement.classList.remove('invalid')
+                }
+            }
+        })
+    }
+
+}
+    Validator.isRequired = function (selector) {
+    return {
+        selector : selector,
+        test : function (value) {
+            return value.trim() ? undefined : 'Vui lòng nhập dữ liệu'
+        }
+    };
+    
+}
+    Validator.isEmail = function (selector) {
+    return {
+        selector : selector,
+        test : function (value) {
+            var regax = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            return regax.test(value) ? undefined : 'Vui lòng nhập dữ liệu'
+            
+        }
+    };
+}
+    Validator.isPhone = function (selector) {
+    return {
+        selector : selector,
+        test : function (value) {
+            return value.trim() ? undefined : 'Vui lòng nhập dữ liệu'
+        }
+    };
+}
+    Validator.minLength = function (selector, min) {
+    return {
+        selector : selector,
+        test : function (value) {
+            return value.length >=min ? undefined : `Vui long nhập tối thiểu ${min} kí tự`
+        }
+    };
+    
+}
+  
