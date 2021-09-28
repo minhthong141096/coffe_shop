@@ -642,15 +642,23 @@
 .contact .infor{
     display: flex;
     justify-content: space-between;
-    margin: 0 8rem;
+    margin: 0 5rem;
+}
+.contact .infor .infor-phone{
+    flex: 1 1 45rem;
+}
+.contact .infor .infor-mail{
+    flex: 1 1 45rem;
 }
 .contact .infor div .right{
     font-size: 1rem;
-    padding-right: 0;
+    padding-right: 5px;
+    padding-left: 0px;
 }
 .contact .infor div .phone{
     color: #6cc352;
     padding-right: 4px;
+    padding-left: 0px;
 }
 .contact .infor div .mail{
     color: #de5347;

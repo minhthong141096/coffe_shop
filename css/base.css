@@ -126,6 +126,7 @@ section{
         font-size: 4.5rem;
     }
 }
+
 @media (max-width:450px){
     html{
         font-size: 50%;
